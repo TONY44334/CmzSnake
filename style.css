@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.upper{
+    height: 5vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 5px;
+}
+h2{
+
+    font-size: 2rem;
+    text-shadow:  0 8px 32px 0 lime;
+    backdrop-filter: blur( 5px );
+    -webkit-backdrop-filter: blur( 5px );
+    margin: 2%;
+  
+}
+body{
+    height: 100vh;
+    width: auto;
+    font-family: cursive;
+    width: auto;
+    display: grid;
+    place-items: center;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    color: lime;
+    background: black;
+}
+canvas{
+    margin-top: 30px;
+    background: rgba( 255, 255, 255, 0.1 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.45);
+    backdrop-filter: blur( 5px );
+   -webkit-backdrop-filter: blur( 5px );
+    border: 1px solid rgba( 255, 255, 255, 0.28 );
+}
+.controls{
+    height: 50vh;
+    width: 100vw;
+    display: flex;
+    margin: 10px;
+    padding: 5px;
+    align-items: flex-start;
+    justify-content: space-evenly;
+}
+.button{
+    
+    height: 10vh;
+    width:  20vw;   
+    margin: 10px;
+    padding: 10px;
+    background: lime;
+    display: grid;
+    place-content: center;
+    display: none;
+    
+
+}
+i{
+    color: aliceblue;
+    font-size: 3.5rem;
+}
+.button:active{
+    margin-top: 3%;
+}
+@media only screen and (max-width: 780px) {
+ 
+    .button{
+        display: block;
+        display: grid;
+        place-content: center;
+    }
+
+}
